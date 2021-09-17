@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>黑马面面</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- header头部 -->
+    <header>
+        黑马面面
+    </header>
+    <!-- nav导航栏 -->
+    <nav>
+        <a href="#">
+            <img src="icons/icon1.png" alt="">
+            <p>HR面试</p>
+        </a>
+
+        <a href="#">
+            <img src="icons/icon2.png" alt="">
+            <p>笔试</p>
+        </a>
+
+        <a href="#">
+            <img src="icons/icon3.png" alt="">
+            <p>技术面试</p>
+        </a>
+
+        <a href="#">
+            <img src="icons/icon4.png" alt="">
+            <p>模拟面试</p>
+        </a>
+
+        <a href="#">
+            <img src="icons/icon5.png" alt="">
+            <p>面试技巧</p>
+        </a>
+
+        <a href="#">
+            <img src="icons/icon6.png" alt="">
+            <p>薪资查询</p>
+        </a>
+
+    </nav>
+    <!-- ad广告栏 -->
+    <section class="ad">
+        <img src="images/go.png" alt="">
+    </section>
+    <!-- work就业指导 -->
+    <section class="work">
+        <div class="hd">
+            <h4>
+                <img src="icons/i2.png" alt="">
+                就业指导
+            </h4>
+            <a href="#">更多>></a>
+        </div>
+        <!-- 轮播图 -->
+        <div class="work_swiper">
+            <!-- Swiper -->
+            <div class="swiper-container work">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!-- work充电学习 -->
+    <section class="work studying">
+        <div class="hd">
+            <h4>
+                <img src="icons/i1.png" alt="">
+                就业指导
+            </h4>
+            <a href="#">更多>></a>
+        </div>
+        <div class="work_swiper">
+            <!-- Swiper -->
+            <div class="swiper-container study">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!-- footer底部 -->
+    <footer>
+        <a href="#">
+            <img src="icons/home.png" alt="">
+            首页
+        </a>
+        <a href="#">
+            <img src="icons/net.png" alt="">
+            技术面试
+        </a>
+        <a href="#">
+            <img src="icons/ms.png" alt="">
+            模拟面试
+        </a>
+        <a href="#">
+            <img src="icons/user.png" alt="">
+            我的主页
+        </a>
+    </footer>
+
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        (function () {
+            var swiper = new Swiper('.work', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+        (function () {
+            var swiper = new Swiper('.study', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+    </script>
+</body>
+
+</html>
